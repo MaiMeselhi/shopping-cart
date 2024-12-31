@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registrierung</title>
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+
+    <link rel="stylesheet" href="./assets/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/dom.js"></script>
+    <script src="./assets/js/elements.js"></script>
+
+    <script src="./assets/js/signup.js" ></script>
+    <script src="./assets/js/index.js" defer></script>
+
+
+  </head>
+  <body>
+    <!-- start navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><img
+            src="./assets/images/logo.jpg"
+            alt="logo"
+            class="w-100 rounded-5"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link header-logo" aria-current="page" href="#"
+                >Willkommen im Kinderkaufhaus</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- end Navbar -->
+    <!-- start login section -->
+    <section id="signup">
+      <div class="login-container">
+        <div class="card login-card">
+          <h2>Registrierung</h2>
+          <form id="signupForm" action="#">
+            <input
+               id="userName"
+              type="text"
+              class="form-control"
+              placeholder="Ihren Namen eingeben ..."
+              required
+            />
+            <input
+            id="userEmail"
+            type="email"
+            class="form-control"
+            placeholder="Ihre E-Mail eingeben ..."
+            required
+          />
+            <input
+            id="userPassword"
+              type="password"
+              class="form-control"
+              placeholder="Ihr Passwort eingeben ..."
+              required
+            />
+         
+            <button type="submit" id="signupSubmitBtn" class="btn btn-primary">
+              <a class="nav-link register " href="#"
+                >registrieren</a
+              >
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- end login section -->
+  </body>
+</html>

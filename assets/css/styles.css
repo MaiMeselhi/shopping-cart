@@ -1,0 +1,85 @@
+/****************** General style ******************/
+:root {
+  --primary-color: #ed610a;
+  --secondary-color: #2596be;
+}
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background: url("https://source.unsplash.com/random/1600x900") no-repeat
+    center center fixed;
+  background-size: cover;
+}
+
+/****************** Navbar style ******************/
+
+.navbar-brand {
+  width: 80px;
+}
+.header-logo{
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: large;
+}
+.navbar-right {
+  color: var(--primary-color);
+}
+
+/****************** Login style ******************/
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.login-card {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  padding: 10px;
+  width: 100%;
+  max-width: 400px;
+  color: white;
+}
+
+.login-card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.form-control {
+  border-radius: 25px;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.btn-primary {
+  background-color: #ff6347;
+  border: none;
+  border-radius: 25px;
+  padding: 10px;
+  font-size: 18px;
+  width: 100%;
+}
+
+.btn-primary:hover {
+  background-color: #e55347;
+}
+
+.register {
+  display: block;
+  text-align: center;
+  color: #f1f1f1;
+  font-size: 16px;
+  text-transform: capitalize;
+  margin-top: 10px;
+}
+
+.register:hover {
+  text-decoration: underline;
+}

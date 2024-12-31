@@ -3,15 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CRUD operations</title>
+    <title>Warenkorb</title>
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+
     <link rel="stylesheet" href="./assets/css/fontawesome.min.css" />
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/dom.js" ></script>
     <script src="./assets/js/elements.js" ></script>
+    <script src="./assets/js/login.js" ></script>
 
     <script src="./assets/js/index.js" defer></script>
 </head>
 <body>
-</body>
+      <!-- start header section -->
+       <section id="header">
+   <!-- start navbar -->
+   <nav class="navbar navbar-expand-lg  ">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="./assets/images/logo.jpg" alt="logo" class="w-100 rounded-5"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+          <li class="nav-item ">
+            <a class="nav-link header-logo " aria-current="page" href="#">Willkommen im Kinderkaufhaus</a>
+          </li>
+        
+        </ul>
+       
+    </div>
+  </nav>
+  <!-- end Navbar -->
+       </section>
+
+         <!-- end header section -->
+
+      <!-- start login section -->
+      <section id="login">
+        <div class="login-container">
+          <div class="card login-card">
+              <h2>Login</h2>
+              <form action="#">
+                  <input type="text" class="form-control" placeholder="Benutzername" required>
+                  <input type="password" class="form-control" placeholder="Passwort" required>
+                  <button type="submit" class="btn btn-primary">Anmelden</button>
+              </form>
+              <a class="nav-link register" href="signup.html">neu? registrieren</a>
+
+  
+             
+          </div>
+      </div>
+  
+      </section>
+     <!-- end login section -->
 </html>
