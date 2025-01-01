@@ -4,7 +4,9 @@
 const init = () => {
 
     dom.mapping();
-   dom.appendEventListeners();
+
+   signupFunctions.appendSignupEventListeners();
+
 
 
 }

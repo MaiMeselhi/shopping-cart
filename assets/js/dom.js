@@ -12,14 +12,7 @@ const dom = {
 
   },
 
-  appendEventListeners() {
-    elements.signupSubmitBtn.addEventListener(
-      'click',()=> {
-        elements.allUsers.push(signupFunctions.createUser(elements.userName,elements.userEmail,elements.userPassword))
-        console.log(elements.allUsers)
-        ;
-        
-      }
-    );
-  },
-};
+ 
+   
+ 
+}

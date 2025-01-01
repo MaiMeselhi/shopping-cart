@@ -1,0 +1,37 @@
+//this file contains all validation functions
+"use strict";
+let regexUserName = /^[A-Za-z]{3,}/;
+/*
+[a-zA-Z0-9]: Matches any alphanumeric character (both uppercase and lowercase letters, and digits).
+._%+-: Matches any of these special characters commonly allowed in the username part of an email (dot, underscore, percent sign, plus, and hyphen).
++: Ensures that there is at least one character before the "@" symbol.
+@: This matches the literal "@" symbol, which separates the username and domain part of the email.
+[a-zA-Z0-9]: Matches any alphanumeric character.
+.-: Matches either a dot or a hyphen in the domain name.
++: Ensures that the domain name part has at least one character after the "@".
+\.: Matches the literal dot (.) before the top-level domain (TLD), like .com, .org, etc. The backslash is needed because dot is a special character in regex.
+[a-zA-Z]: Matches any letter (uppercase or lowercase).
+{2,}: Ensures that the TLD has at least two characters (e.g., .com, .org), and it can be more.
+ */
+let regexUserEmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+/**
+ * contains upper and lower letters
+ *  8 to 15 characters
+ * @ - is allowed
+ */
+let regexUserPassword = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+;
+
+const validation = {
+  isvalidInputs(input, regex) {
+    return regex.test(input.value) ? true : false;
+  },
+  //check userName , userEmail ,userPassword valid or not valid
+  isUserDataValid() {
+    return (
+      validation.isvalidInputs(elements.userName, regexUserName) &&
+      validation.isvalidInputs(elements.userEmail, regexUserEmail) &&
+      validation.isvalidInputs(elements.userPassword, regexUserPassword) 
+    );
+  },
+};
