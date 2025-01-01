@@ -34,4 +34,25 @@ const validation = {
       validation.isvalidInputs(elements.userPassword, regexUserPassword) 
     );
   },
+  isUserEmailExist(users,newUser){
+    for(let i=0 ; i< users.length ; i++){
+      if (users[i].email == newUser.email){
+        //newUser exist!
+        return true;
+      }
+      else{
+        //newUser doesn't exist
+        return false;
+      }
+    }
+  },
+  //sweet alert
+  showSucessAlert(){
+    Swal.fire({
+      title: "erledigt!",
+      text: "Willkommen im Kinderkaufhaus!",
+      icon: "success"
+    }); 
+
+  }
 };
