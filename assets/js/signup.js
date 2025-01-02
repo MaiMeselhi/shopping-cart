@@ -1,13 +1,6 @@
 //this file contains all  signup functions
 "use strict";
 
-/*
-  -allUsers:array of objects -> contains  data for each user (name,email,password)
-  - when local storge contains users data ,get this data and save it in the allUsers array.
-  - else return empty array
- */
-elements.allUsers = JSON.parse(localStorage.getItem("users")) || [];
-console.log("allusers", elements.allUsers);
 const signupFunctions = {
   
   /**when signup button is clicked
@@ -19,6 +12,7 @@ const signupFunctions = {
    * */
   handleSignupBtnClick() {
     if (validation.isUserDataValid()) {
+
       let newUser = sharedFunctions.createUser(
         elements.userName,
         elements.userEmail,
@@ -28,6 +22,7 @@ const signupFunctions = {
 
       //if newUserEmail does not match any Email in alUsers array
       if (!validation.isUserEmailExist(elements.allUsers, newUser)) {
+      
         elements.allUsers.push(newUser);
 
         LocalStorageFunctions.setToLocalStorage("users", elements.allUsers);
@@ -40,10 +35,17 @@ const signupFunctions = {
         );
         validation.showSucessAlert();
       } else {
+        elements.emailExistWarning.classList.remove("d-none")
+        elements.emailExistWarning.classList.add("d-block");
+        elements.userEmail.classList.add("is-invalid");
+        elements.userEmail.classList.remove("is-valid");
         console.log("email exist");
       }
     } else {
       console.log("not valid data ");
+
+
+
     }
   },
 

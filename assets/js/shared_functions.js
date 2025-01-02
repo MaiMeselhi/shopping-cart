@@ -1,5 +1,16 @@
-'use strict'
-const sharedFunctions = {
+'use strict';
+
+/*
+  -allUsers:array of objects -> contains  data for each user (name,email,password)
+  - when local storge contains users data ,get this data and save it in the allUsers array.
+  - else return empty array
+ */
+  elements.allUsers = JSON.parse(localStorage.getItem("users")) || [];
+  console.log("allusers", elements.allUsers);
+
+  // userLoginIndex : this is the index of the user in local storage
+  let userLoginIndex = JSON.parse(localStorage.getItem("userLoginIndex"))
+  const sharedFunctions = {
     createUser(userNameInput, userEmailInput, userPasswordInput) {
         let user = {
           //userName is undefined in login page

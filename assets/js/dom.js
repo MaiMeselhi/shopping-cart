@@ -14,8 +14,11 @@ const dom = {
     elements.userName = dom.$("#userName");
     elements.userEmail = dom.$("#userEmail ");
     elements.userPassword =dom.$('#userPassword');
+    elements.emailExistWarning = dom.$('#emailExistWarning');
     elements.goToSignupPage=dom.$('#goToSignupPage');
     elements.goToLoginPage =dom.$('#goToLoginPage');
+    //products
+    elements.welcomeUser =dom.$('#welcomeUser');
 
     
 

@@ -26,15 +26,44 @@ const validation = {
   isvalidInputs(input, regex) {
     return regex.test(input.value) ? true : false;
   },
+
   //check userName , userEmail ,userPassword valid or not valid
   isUserDataValid() {
+    if(validation.isvalidInputs(elements.userName, regexUserName))
+      {
+       elements.userName.classList.add("is-valid");
+       elements.userName.classList.remove("is-invalid");
+      }
+      else{
+       elements.userName.classList.add("is-invalid");
+       elements.userName.classList.remove("is-valid");
+      }
+      if(validation.isvalidInputs(elements.userEmail, regexUserEmail))
+        {
+          elements.userEmail.classList.add("is-valid");
+          elements.userEmail.classList.remove("is-invalid");
+        }
+        else{
+          elements.userEmail.classList.add("is-invalid");
+          elements.userEmail.classList.remove("is-valid");
+        }
+        if(validation.isvalidInputs(elements.userPassword, regexUserPassword))
+          {
+            elements.userPassword.classList.add("is-valid");
+            elements.userPassword.classList.remove("is-invalid");
+          }
+          else{
+            elements.userPassword.classList.add("is-invalid");
+            elements.userPassword.classList.remove("is-valid");
+          }
     return (
       validation.isvalidInputs(elements.userName, regexUserName) &&
       validation.isvalidInputs(elements.userEmail, regexUserEmail) &&
-      validation.isvalidInputs(elements.userPassword, regexUserPassword) 
-    );
+       validation.isvalidInputs(elements.userPassword, regexUserPassword) 
+     );
   },
   isUserDataLoginValid () {
+    
     return (
       validation.isvalidInputs(elements.loginUserEmail, regexUserEmail) &&
       validation.isvalidInputs(elements.loginUserPassword, regexUserPassword) 
