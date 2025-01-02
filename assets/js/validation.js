@@ -34,6 +34,12 @@ const validation = {
       validation.isvalidInputs(elements.userPassword, regexUserPassword) 
     );
   },
+  isUserDataLoginValid () {
+    return (
+      validation.isvalidInputs(elements.loginUserEmail, regexUserEmail) &&
+      validation.isvalidInputs(elements.loginUserPassword, regexUserPassword) 
+    ); 
+  },
   isUserEmailExist(users,newUser){
     for(let i=0 ; i< users.length ; i++){
       if (users[i].email == newUser.email){

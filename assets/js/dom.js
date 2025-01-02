@@ -5,12 +5,16 @@ const dom = {
     return document.querySelector(selector);
   },
   mapping() {
-    elements.signupSubmitBtn = dom.$("#signupSubmitBtn");
+    //login
+    elements.loginUserEmail = dom.$('#loginUserEmail');
+    elements.loginUserPassword =dom.$('#loginUserPassword');
     elements.loginBtn =dom.$('#loginBtn');
+    //sign up
+    elements.signupSubmitBtn = dom.$("#signupSubmitBtn");
     elements.userName = dom.$("#userName");
     elements.userEmail = dom.$("#userEmail ");
     elements.userPassword =dom.$('#userPassword');
-    elements.goToSignupPageBtn=dom.$('#goToSignupPage')
+    elements.goToSignupPage=dom.$('#goToSignupPage');
     elements.goToLoginPage =dom.$('#goToLoginPage');
 
     

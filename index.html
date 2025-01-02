@@ -13,11 +13,14 @@
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/dom.js" ></script>
     <script src="./assets/js/elements.js" ></script>
-    <script src="./assets/js/login.js" ></script>
     <script src ="./assets/js/validation.js"></script>
-    <script src ="./assets/js/signup.js"></script>
+    <script src ="./assets/js/shared_functions.js"></script>
 
-    <script src="./assets/js/index.js" defer></script>
+    <script src ="./assets/js/login.js"></script>
+
+    <script src ="./assets/js/signup.js" ></script>
+    <script src ="assets/js/index.js" defer></script>
+
 </head>
 <body>
       <!-- start header section -->
@@ -50,8 +53,8 @@
           <div class="card login-card">
               <h2>Login</h2>
               <form action="#">
-                  <input type="text" class="form-control" placeholder="Benutzername" required>
-                  <input type="password" class="form-control" placeholder="Passwort" required>
+                  <input type="email" class="form-control" placeholder="Email" id="loginUserEmail" required>
+                  <input type="password" class="form-control" placeholder="Passwort" id="loginUserPassword" required>
                   <button type="submit" class="btn btn-primary" id="loginBtn">Anmelden</button>
               </form>
               <a class="nav-link register" id="goToSignupPage">neu? registrieren</a>

@@ -48,10 +48,14 @@ const signupFunctions = {
   },
 
   appendSignupEventListeners() {
-    elements.signupSubmitBtn.addEventListener(
-      "click",
-      signupFunctions.handleSignupBtnClick
-    );
+    if(elements.signupSubmitBtn !== undefined && elements.signupSubmitBtn !== null)
+    {
+      elements.signupSubmitBtn.addEventListener(
+        "click",
+        signupFunctions.handleSignupBtnClick
+      );
+    }
+   
  
     
   },

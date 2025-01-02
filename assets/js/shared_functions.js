@@ -2,7 +2,8 @@
 const sharedFunctions = {
     createUser(userNameInput, userEmailInput, userPasswordInput) {
         let user = {
-          name: userNameInput.value,
+          //userName is undefined in login page
+          name: userNameInput.value || undefined,
           email: userEmailInput.value,
           password: userPasswordInput.value,
         };
