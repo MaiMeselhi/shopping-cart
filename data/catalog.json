@@ -1,0 +1,52 @@
+[
+    {
+      "productName": "iPhone 15",
+      "productCategory": "Phones",
+      "productPreis": "999€",
+      "imageSource": "../assets/images/iphone15.png"
+    },
+    {
+      "productName": "Samsung Galaxy S23",
+      "productCategory": "Phones",
+      "productPreis": "799€",
+      "imageSource": "../assets/images/samsung_s23.png"
+    },
+    {
+      "productName": "iPad Air 13",
+      "productCategory": "Tablets",
+      "productPreis": "799€",
+      "imageSource":"../assets/images/iPad_Air_13.jpg"
+    },
+    {
+        "productName": "Samsung Galaxy Tab A",
+        "productCategory": "Tablets",
+        "productPreis": "599€",
+        "imageSource":"../assets/images/Samsung_TabA.jpg"
+      },
+    {
+      "productName": "Samsung QLED TV",
+      "productCategory": "TVs",
+      "productPreis": "1499€",
+      "imageSource": "../assets/images/samsung_tv.png"
+    },
+    {
+        "productName": "LG LED TV",
+        "productCategory": "TVs",
+        "productPreis": "1299€",
+        "imageSource": "../assets/images/lg_tv.jpg"
+      },
+    {
+      "productName": "Apple Watch Series 8",
+      "productCategory": "Watches",
+      "productPreis": "499€",
+      "imageSource": "../assets/images/apple_watch.jpg"
+    },
+    {
+        "productName": "Apple Watch Series 8",
+        "productCategory": "Watches",
+        "productPreis": "499€",
+        "imageSource": "../assets/images/hawaii_watch.jpg"
+      }
+    
+  ]
+  

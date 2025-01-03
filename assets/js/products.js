@@ -11,6 +11,13 @@ showWelcomeUser  () {
       console.error("Invalid index:", userLoginIndex);
    }
   console.log(userLoginIndex );
+},
+//- display the products catalog that is loaded from a JSON file via Ajax.
+renderProducts () { 
+   
+
+
+
 }
 }
 

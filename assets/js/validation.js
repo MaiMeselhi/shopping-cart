@@ -63,7 +63,24 @@ const validation = {
      );
   },
   isUserDataLoginValid () {
-    
+    if(validation.isvalidInputs( elements.loginUserEmail, regexUserEmail))
+      {
+        elements.loginUserEmail.classList.add("is-valid");
+        elements.loginUserEmail.classList.remove("is-invalid");
+      }
+      else{
+        elements.loginUserEmail.classList.add("is-invalid");
+        elements.loginUserEmail.classList.remove("is-valid");
+      }
+      if(validation.isvalidInputs(elements.loginUserPassword, regexUserPassword))
+        {
+          elements.loginUserPassword .classList.add("is-valid");
+          elements.loginUserPassword .classList.remove("is-invalid");
+        }
+        else{
+          elements.loginUserPassword .classList.add("is-invalid");
+          elements.loginUserPassword .classList.remove("is-valid");
+        }
     return (
       validation.isvalidInputs(elements.loginUserEmail, regexUserEmail) &&
       validation.isvalidInputs(elements.loginUserPassword, regexUserPassword) 

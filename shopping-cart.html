@@ -3,20 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Produkte</title>
+    <title>Warenkorb</title>
     <link rel="stylesheet" href="assets/css/all.min.css" />
+
     <link rel="stylesheet" href="./assets/css/fontawesome.min.css" />
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+
     <link rel="stylesheet" href="./assets/css/styles.css" />
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/dom.js"></script>
     <script src="./assets/js/elements.js"></script>
     <script src="./assets/js/shared_functions.js"></script>
+
     <script src="./assets/js/login.js"></script>
     <script src="./assets/js/signup.js"></script>
     <script src="./assets/js/local-storage.js"></script>
-    <script src="./assets/js/Ajax.js"></script>
-    <script src="./assets/js/crud-operations.js"></script>
 
     <script src="./assets/js/products.js"></script>
     <script src="./assets/js/index.js" defer></script>
@@ -53,8 +54,8 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
          
               <li class="nav-item">
-                <a class="nav-link green-color fw-bold " aria-current="page" href="shopping-cart.html"
-                  >Warenkorb</a
+                <a class="nav-link green-color fw-bold " aria-current="page" href="products.html"
+                  >Products</a
                 >
               </li>
               <li class="nav-item">
@@ -68,32 +69,5 @@
       </div>
     </nav>
     <!-- end Navbar -->
-     <!--start products section-->
-     <section id="products">
-      <div class="container">
-        <div class="w-75 mx-auto">
-          <h3 class="my-3 text-primary text-center ">Search Products</h3>
-          <div class="form-floating mb-3">
-            <input type="search" class="form-control text-bg-light" id="searchProductsByName"  placeholder="Produkt nach Name suchen">
-            <label for="floatingInput" class="text-body-tertiary">Produkt nach Name suchen</label>
-          </div>
-          <div class="form-floating mb-3">
-            <input type="search" class="form-control text-bg-light" id="searchCategory" placeholder="Produkt nach Kategorie suchen">
-            <label for="floatingInput" class="text-body-tertiary">Produkt nach Kategorie suchen</label>
-          </div>
-            <h3 class="my-3 text-primary text-center">Verfügbare Produkte</h3>
-           <div class="row productsRow" id="productsRow">
-          <div class="col-md-3">
-                <img src="./assets/images/iphone15.png" class="w-100 my-2" alt="iphone12"/>
-                <p>Produktname</p>
-                <p>Produktpreis</p>
-                <p>Produktkategorie</p>
-                <button type="button" class="btn btn-primary" id="addToCartBtn">Zum Warenkorb hinzufügen</button>
-            </div> 
-           </div>
-    </div>
-    </div>
-     </section>
-     <!--end products section-->
   </body>
 </html>

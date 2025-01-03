@@ -7,6 +7,7 @@ const init = () => {
     loginFunctions.appendLoginEventListeners();
    signupFunctions.appendSignupEventListeners();
    productsFunctions.showWelcomeUser();
+   ajax.loadJSON('/data/catalog.json',crudOperations.displayProducts)
 
 }
 

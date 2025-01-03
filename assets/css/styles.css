@@ -1,7 +1,7 @@
 /****************** General style ******************/
 :root {
   --primary-color: #ed610a;
-  --secondary-color: #07b0a9;
+  --secondary-color: #2596be;
 }
 body,
 html {
@@ -12,7 +12,27 @@ html {
     center center fixed;
   background-size: cover;
 }
+h3{
+  font-size: 20px;
+}
+p{
+  font-size: 14px;
+}
+#searchProductsByName {
+  color: #b0b0b0;      /* Light gray color */
+  font-size: 14px;     /* Same size as input text */
+  font-weight: lighter;/* Lighter weight */
+  opacity: 0.7;        /* Slightly faded text */
+  text-align: left;    /* Align text to the left */
+}
 
+
+.orange-color{
+  color: var(--primary-color);
+}
+.green-color{
+  color: var(--secondary-color);
+}
 /****************** Navbar style ******************/
 
 .navbar-brand {
@@ -82,4 +102,9 @@ html {
 
 .register:hover {
   text-decoration: underline;
+}
+/****************** products style ******************/
+#addToCartBtn {
+  font-size: 16px;
+
 }

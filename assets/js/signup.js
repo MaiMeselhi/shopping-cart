@@ -33,6 +33,7 @@ const signupFunctions = {
           elements.userEmail,
           elements.userPassword
         );
+
         validation.showSucessAlert();
       } else {
         elements.emailExistWarning.classList.remove("d-none")
@@ -41,12 +42,21 @@ const signupFunctions = {
         elements.userEmail.classList.remove("is-valid");
         console.log("email exist");
       }
+      setTimeout(function() {
+        signupFunctions.goToLoginPage();
+          }, 3000)
+    
     } else {
       console.log("not valid data ");
 
 
 
     }
+  },
+  goToLoginPage(){
+    console.log("clickeddd")
+    window.location.href = "../index.html";
+
   },
 
   appendSignupEventListeners() {
@@ -57,6 +67,7 @@ const signupFunctions = {
         signupFunctions.handleSignupBtnClick
       );
     }
+    
    
  
     
