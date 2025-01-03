@@ -17,7 +17,6 @@
     <script src="./assets/js/local-storage.js"></script>
     <script src="./assets/js/Ajax.js"></script>
     <script src="./assets/js/crud-operations.js"></script>
-
     <script src="./assets/js/products.js"></script>
     <script src="./assets/js/index.js" defer></script>
   </head>
@@ -69,31 +68,28 @@
     </nav>
     <!-- end Navbar -->
      <!--start products section-->
-     <section id="products">
+     <section id="catalog">
       <div class="container">
         <div class="w-75 mx-auto">
-          <h3 class="my-3 text-primary text-center ">Search Products</h3>
           <div class="form-floating mb-3">
-            <input type="search" class="form-control text-bg-light" id="searchProductsByName"  placeholder="Produkt nach Name suchen">
+            <input type="search" class="form-control text-bg-light" id="searchProductsByName"   placeholder="Produkt nach Name suchen">
             <label for="floatingInput" class="text-body-tertiary">Produkt nach Name suchen</label>
           </div>
-          <div class="form-floating mb-3">
-            <input type="search" class="form-control text-bg-light" id="searchCategory" placeholder="Produkt nach Kategorie suchen">
-            <label for="floatingInput" class="text-body-tertiary">Produkt nach Kategorie suchen</label>
-          </div>
-            <h3 class="my-3 text-primary text-center">Verfügbare Produkte</h3>
-           <div class="row productsRow" id="productsRow">
-          <div class="col-md-3">
-                <img src="./assets/images/iphone15.png" class="w-100 my-2" alt="iphone12"/>
-                <p>Produktname</p>
-                <p>Produktpreis</p>
-                <p>Produktkategorie</p>
-                <button type="button" class="btn btn-primary" id="addToCartBtn">Zum Warenkorb hinzufügen</button>
+    
+            <h3 class="my-5 text-primary text-center">Verfügbare Produkte</h3>
+           <div class="row productsRow mx-auto" id="productsRow">
+          <div class="col-md-4">
+                <!-- <img src="./assets/images/iphone15.png" class="w-100 my-2" alt="iphone12"/>
+                <p>produktname</p>
+                <p>produktpreis</p>
+                <p>produktkategorie</p>
+                <button type="button" class="btn btn-primary" id="addtocartbtn">zum warenkorb hinzufügen</button> -->
             </div> 
            </div>
     </div>
     </div>
      </section>
      <!--end products section-->
+     <main></main>
   </body>
 </html>

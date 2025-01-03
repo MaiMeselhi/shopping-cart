@@ -10,7 +10,8 @@ const signupFunctions = {
    *   3- the user's data is saved in local storage as well.
    * *
    * */
-  handleSignupBtnClick() {
+  handleSignupBtnClick(evt) {
+    evt.preventDefault();
     if (validation.isUserDataValid()) {
 
       let newUser = sharedFunctions.createUser(

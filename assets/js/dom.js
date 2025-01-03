@@ -19,7 +19,13 @@ const dom = {
     elements.goToLoginPage =dom.$('#goToLoginPage');
     //products
     elements.welcomeUser =dom.$('#welcomeUser');
-
+    elements.productImage=dom.$('#productImage');
+    elements.productName = dom.$('#productName');
+    elements.productPries =dom.$('#productPries');
+    elements.productCategory =dom.$('#productCategory');
+    //crud-operations
+    elements.productsRow = dom.$('#productsRow');
+    elements.searchProductsByName = dom.$('#searchProductsByName');
     
 
   },

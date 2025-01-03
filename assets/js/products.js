@@ -4,7 +4,7 @@ showWelcomeUser  () {
    if (userLoginIndex >= 0 && userLoginIndex < elements.allUsers.length) {
       // Safe to access elements.allUsers[userLoginIndex]
   
-   elements.welcomeUser.innerHTML = `Welcome ${elements.allUsers[userLoginIndex].name}`;
+   elements.welcomeUser.innerHTML = `Willkommen ${elements.allUsers[userLoginIndex].name}`;
   
    } else {
   
@@ -12,13 +12,26 @@ showWelcomeUser  () {
    }
   console.log(userLoginIndex );
 },
-//- display the products catalog that is loaded from a JSON file via Ajax.
-renderProducts () { 
-   
+//function to search product by name
+searchProductsByName(){
+   let searchList = [];
+   for(let i = 0 ; i<productsList.length; i++){
+     let searchTerm =  elements.searchProductsByName.value;
+     if(productsList[i].productName.toLowerCase().includes(searchTerm.toLowerCase()))
+     {
+       searchList.push(productsList[i]);      
+     }
+     crudOperations.displayList(searchList,searchTerm)      
+   }
+ },appendEventListeners(){
+
+   elements.searchProductsByName.addEventListener(
+      "input",
+productsFunctions.searchProductsByName    );
 
 
+},
 
-}
 }
 
 

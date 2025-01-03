@@ -23,7 +23,8 @@ const loginFunctions = {
    * when login Button is clicked
    * 1-
    */
-  handleLoginBtnClick() {
+  handleLoginBtnClick(evt) {
+    evt.preventDefault();
     if (validation.isUserDataLoginValid()) {
       let user = sharedFunctions.createUser(
         "",

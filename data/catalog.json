@@ -1,4 +1,6 @@
-[
+{
+  "products":[
+  
     {
       "productName": "iPhone 15",
       "productCategory": "Phones",
@@ -49,4 +51,6 @@
       }
     
   ]
+   
+}
   
