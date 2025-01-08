@@ -20,7 +20,7 @@
     <script src="./assets/js/products.js"></script>
     <script src="./assets/js/index.js" defer></script>
   </head>
-  <body>
+  <body id="productsBody">
     <!-- start navbar -->
     <nav class="navbar navbar-expand-lg">
       <div class="container">
@@ -44,22 +44,28 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link mx-3 fw-bold fs-5 orange-color" id="welcomeUser"></a>
+              <a
+                class="nav-link mx-3 fw-bold fs-5 orange-color"
+                id="welcomeUser"
+              ></a>
             </li>
-            
           </ul>
           <div class="d-flex navbar-right">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-         
               <li class="nav-item">
-                <a class="nav-link green-color fw-bold " aria-current="page" href="shopping-cart.html"
-                  >Warenkorb</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link green-color fw-bold " aria-current="page" href="index.html"
+                <a
+                  class="nav-link green-color fw-bold"
+                  aria-current="page"
+                  href="index.html"
                   >Abmelden</a
                 >
+              </li>
+              <div class="openShopping">
+                <img src="assets/images/shopping.svg">
+                <span class="quantity">0</span>
+            </div>
+              <li class="nav-item">
+              
               </li>
             </ul>
           </div>
@@ -67,29 +73,58 @@
       </div>
     </nav>
     <!-- end Navbar -->
-     <!--start products section-->
-     <section id="catalog">
+    <!--start products section-->
+    <section id="catalog">
       <div class="container">
         <div class="w-75 mx-auto">
           <div class="form-floating mb-3">
-            <input type="search" class="form-control text-bg-light" id="searchProductsByName"   placeholder="Produkt nach Name suchen">
-            <label for="floatingInput" class="text-body-tertiary">Produkt nach Name suchen</label>
+            <input
+              type="search"
+              class="form-control text-bg-light"
+              id="searchProductsByName"
+              placeholder="Produkt nach Name suchen"
+            />
+            <label for="floatingInput" class="text-body-tertiary"
+              >Produkt nach Name suchen</label
+            >
           </div>
-    
-            <h3 class="my-5 text-primary text-center">Verfügbare Produkte</h3>
-           <div class="row productsRow mx-auto" id="productsRow">
-          <div class="col-md-4">
-                <!-- <img src="./assets/images/iphone15.png" class="w-100 my-2" alt="iphone12"/>
+
+          <h3 class="my-5 text-primary text-center">Verfügbare Produkte</h3>
+          <div class="row productsRow mx-auto" id="productsRow">
+            <div class="col-md-4">
+              <!-- <img src="./assets/images/iphone15.png" class="w-100 my-2" alt="iphone12"/>
                 <p>produktname</p>
                 <p>produktpreis</p>
                 <p>produktkategorie</p>
                 <button type="button" class="btn btn-primary" id="addtocartbtn">zum warenkorb hinzufügen</button> -->
-            </div> 
-           </div>
-    </div>
-    </div>
-     </section>
-     <!--end products section-->
-     <main></main>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--end products section-->
+      <!-- <h1 class="orange-color fw-bold my-5" >ihr warenkorb</h1>
+      <ul id="listcard" ></ul>
+      <div class="cart-footer container">
+        <div class="total-price" id="total">total: $0</div>
+        <div class="total-quantity" id="quantity">total: $0</div>
+        <button class="checkout-btn">proceed to checkout</button>
+
+      </div>
+      <div class="closeShopping">Close</div>
+
+ -->
+
+ <div class="card">
+  <h1>Card</h1>
+  <ul id="listcard">
+  </ul>
+  <div class="checkOut">
+      <div id="total">0</div>
+      <div class="closeShopping">Close</div>
+  </div>
+</div>
+
+
   </body>
 </html>
