@@ -30,11 +30,6 @@ const productsFunctions = {
       "input",
       productsFunctions.searchProductsByName
     );
-    elements.openShopping.addEventListener('click', ()=>{
-      elements.productsBody.classList.add('active');
-  });
-  elements.closeShopping.addEventListener('click', ()=>{
-    elements.productsBody.classList.remove('active');
-})
+
   },
 };

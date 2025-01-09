@@ -19,7 +19,6 @@ const signupFunctions = {
         elements.userEmail,
         elements.userPassword
       );
-      console.log("new user", newUser);
 
       //if newUserEmail does not match any Email in alUsers array
       if (!validation.isUserEmailExist(elements.allUsers, newUser)) {
@@ -34,8 +33,9 @@ const signupFunctions = {
           elements.userEmail,
           elements.userPassword
         );
+        signupFunctions.goToLoginPage();
 
-        validation.showSucessAlert();
+
       } else {
         elements.emailExistWarning.classList.remove("d-none")
         elements.emailExistWarning.classList.add("d-block");
@@ -43,9 +43,8 @@ const signupFunctions = {
         elements.userEmail.classList.remove("is-valid");
         console.log("email exist");
       }
-      setTimeout(function() {
-        signupFunctions.goToLoginPage();
-          }, 3000)
+    
+   
     
     } else {
       console.log("not valid data ");
@@ -53,6 +52,7 @@ const signupFunctions = {
 
 
     }
+
   },
   goToLoginPage(){
     console.log("clickeddd")

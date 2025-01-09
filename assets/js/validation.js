@@ -98,13 +98,5 @@ const validation = {
       }
     }
   },
-  //sweet alert
-  showSucessAlert(){
-    Swal.fire({
-      title: "erledigt!",
-      text: "Willkommen im Kinderkaufhaus!",
-      icon: "success"
-    }); 
-
-  }
+  
 };
