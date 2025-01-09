@@ -1,4 +1,5 @@
 //this file contains all validation functions
+//enthält alle Validierungsfunktionen von  Registerung  und  Anmedlung
 "use strict";
 let regexUserName = /^[A-Za-z]{3,}/;
 /*

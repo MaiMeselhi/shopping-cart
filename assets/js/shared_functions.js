@@ -1,4 +1,5 @@
 'use strict';
+//gemeinsame Funktionen z.B in beide regestrieung and anmeldung brauche ich create user und clear inputs field
 
 /*
   -allUsers:array of objects -> contains  data for each user (name,email,password)

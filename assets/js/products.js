@@ -1,4 +1,5 @@
 "use strict";
+//containes 3 funktionen
 const productsFunctions = {
   showWelcomeUser() {
     if (userLoginIndex >= 0 && userLoginIndex < elements.allUsers.length) {

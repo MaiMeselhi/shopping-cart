@@ -12,12 +12,12 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./assets/js/dom.js"></script>
     <script src="./assets/js/elements.js"></script>
-    <script src ="./assets/js/validation.js"></script>
+    <script src="./assets/js/validation.js"></script>
     <script src="./assets/js/local-storage.js"></script>
-    <script src="./assets/js/shared_functions.js" ></script>
-    <script src="./assets/js/login.js" ></script>
-    <script src="./assets/js/signup.js" ></script>
-    <script src="./assets/js/index.js" defer ></script>
+    <script src="./assets/js/shared_functions.js"></script>
+    <script src="./assets/js/login.js"></script>
+    <script src="./assets/js/signup.js"></script>
+    <script src="./assets/js/index.js" defer></script>
   </head>
   <body>
     <!-- start navbar -->
@@ -59,32 +59,32 @@
           <h2>Registrierung</h2>
           <form id="signupForm" action="#">
             <input
-               id="userName"
+              id="userName"
               type="text"
               class="form-control"
               placeholder="Ihren Namen eingeben ..."
               required
             />
             <input
-            id="userEmail"
-            type="email"
-            class="form-control"
-            placeholder="Ihre E-Mail eingeben ..."
-            required
-          />
-          <p class="d-none invalid-feedback fw-bold "  id="emailExistWarning">E-Mail existiert, bitte schreiben Sie eine weitere E-Mail</p>
+              id="userEmail"
+              type="email"
+              class="form-control"
+              placeholder="Ihre E-Mail eingeben ..."
+              required
+            />
+            <p class="d-none invalid-feedback fw-bold" id="emailExistWarning">
+              E-Mail existiert, bitte schreiben Sie eine weitere E-Mail
+            </p>
             <input
-            id="userPassword"
+              id="userPassword"
               type="password"
               class="form-control"
               placeholder="Ihr Passwort eingeben ..."
               required
             />
-         
+
             <button type="submit" id="signupSubmitBtn" class="btn btn-primary">
-              <a class="nav-link register " id="goToLoginPage" 
-                >registrieren</a
-              >
+              <a class="nav-link register" id="goToLoginPage">registrieren</a>
             </button>
           </form>
         </div>

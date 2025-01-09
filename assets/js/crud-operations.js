@@ -1,4 +1,5 @@
 //this file contains crud operation copy , remove , update and display products functions
+//diese Datei enthält Funktionen zum Kopieren, Entfernen, Aktualisieren und Anzeigen von Produkten
 "use strict";
 let productsList = [];
 let listCards = [] ;
@@ -90,10 +91,8 @@ const crudOperations = {
       listCards[key] = JSON.parse(JSON.stringify(productsList[key]));
       listCards[key].quantity = 1;
     }
-    console.log(key);
 
       shoppingCartList.push(listCards[key]);
-      console.log("shoppingCartList",shoppingCartList);
       
       crudOperations.displayShoppingCart()
       crudOperations.saveToLocalStorage()
@@ -133,18 +132,19 @@ const crudOperations = {
                    key
                     }, ${value.quantity + 1})">+</button>
                   </div>     
-                <button class="delete-btn" onclick="crudOperations.deleteCard(${key})">Delete</button>
+                <button class="delete-btn" onclick="crudOperations.deleteCard(${key})">Löschen</button>
             </div>   
            </div>`
                 elements.listCard.appendChild(newDiv);
         }
     })
-    elements.total.innerText = ` Total Price: ${totalPrice}`;
-    elements.quantity.innerText = ` Total Quantity: ${count}`;
+    elements.total.innerText = ` Gesamtpreis : ${totalPrice}`;
+    elements.quantity.innerText = ` Gesamtanzahl: ${count}`;
   },
   changeQuantity(key, quantity) {
     if(quantity == 0){
-      delete shoppingCartList[key];
+      crudOperations.deleteCard(key);
+      
   }else{
       shoppingCartList[key].quantity = quantity;
       
